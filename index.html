@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <!-- Alert for Messages -->
+    <div class="alert" id="alert" style="display: none;"></div>
+
+    <!-- Registration Form -->
+    <div class="authForm" id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="regUsername" placeholder="Username" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button id="registerBtn">Register</button>
+        <p>Already registered? <span id="goToLogin">Login</span></p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="authForm" id="loginForm" style="display: block;">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button id="loginBtn">Login</button>
+        <p>Don't have an account? <span id="goToRegister">Register</span></p>
+    </div>
+
+    <!-- Start Quiz Button (Initially Hidden) -->
+    <div class="btn startBtn" style="display: none;">Start Quiz</div>
+
+    <!-- Quiz Interface (Initially Hidden) -->
+    <div class="container" style="display: none;">
+        <h1>Let's play a Quiz Game</h1>
+        <div class="question"></div>
+        <div class="choices"></div>
+        <button class="btn nextBtn">Next</button>
+        <div class="scoreCard"></div>
+        <div class="timer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
